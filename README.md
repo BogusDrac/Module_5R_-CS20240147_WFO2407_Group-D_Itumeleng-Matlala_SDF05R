@@ -6,4 +6,4 @@
 
     - The first button moves to the right when clicked and moves back to the original positions
 
-    - The second and third button rotate 360 degrees when clicked 
+    - The second and third button rotate 360 degrees when clicked
