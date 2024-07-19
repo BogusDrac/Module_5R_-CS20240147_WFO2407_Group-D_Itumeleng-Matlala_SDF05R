@@ -49,6 +49,67 @@ p {
         7px 7px 20px 0px rgba(0, 0, 0, .1),
         4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
+    
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+.btn-1:hover, .btn-2:hover, .btn-3:hover {
+    font-weight: bolder;
+    animation: beat 1s ease-in-out infinite ;
+}
+@keyframes beat {
+    100%{
+        transform: scale(130%);
+        background-color: rgb(239, 203, 20);
+    }
+}
+
+
+.btn-1:focus{
+    animation: move 2s ease-in-out  1;
+    background-color: azure;
+}
+@keyframes move {
+    0%{
+        background-color: rgb(239, 203, 20);
+    }
+    100%{
+        background-color: rgb(168, 96, 7);
+        transform: translate(50%);
+    }
+}
+
+
+.btn-2:focus {
+    animation: spin 1s ease 30ms 2 reverse both;
+    background-color: azure;
+}
+@keyframes spin {
+    0%{
+        background-color: rgb(173, 255, 47);
+    }
+    50%{
+        background-color: rgb(239, 203, 20);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn-3:focus{
+    animation: final 3s ease-out 30ms 4;
+    background-color: azure;
+}
+
+@keyframes final {
+    0% {
+        background-color: azure;
+    }
+    50%{
+        background-color: coral;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: brown;
+    }
+}
